@@ -85,7 +85,7 @@ import org.primefaces.model.file.UploadedFile;
  *
  * @author Desmond Bennett
  */
-public class PurchasingManager implements Serializable, AuthenticationListener {
+public class LaboratoryManager implements Serializable, AuthenticationListener {
 
     @PersistenceUnit(unitName = "JMTSPU")
     private EntityManagerFactory EMF1;
@@ -116,7 +116,7 @@ public class PurchasingManager implements Serializable, AuthenticationListener {
     /**
      * Creates a new instance of PurchasingManager
      */
-    public PurchasingManager() {
+    public LaboratoryManager() {
         init();
     }
     
@@ -1980,6 +1980,10 @@ public class PurchasingManager implements Serializable, AuthenticationListener {
         if (getUser().getModules().getFinancialAdminModule()) {
             getSystemManager().getDashboard().openTab("Financial Administration");
         }
+        
+        if (getUser().getModules().getJobManagementAndTrackingModule()) {
+            getSystemManager().getDashboard().openTab("Job Management");
+        }
 
     }
 
@@ -1987,6 +1991,10 @@ public class PurchasingManager implements Serializable, AuthenticationListener {
 
         if (getUser().getModules().getPurchaseManagementModule()) {
             getSystemManager().getMainTabView().openTab("Purchase Requisitions");
+        }
+        
+        if (getUser().getModules().getJobManagementAndTrackingModule()) {
+            getMainTabView().openTab("Job Browser");
         }
 
     }
