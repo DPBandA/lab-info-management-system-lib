@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>jm.com.dpbennett</groupId>
-    <artifactId>purchase-management-library</artifactId>
-    <version>2.0.0</version>
+    <artifactId>lab-info-management-system-lib</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -11,8 +11,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <skipTests>true</skipTests>
     </properties>
-    <description>The library for the Purchase Management web application.</description>
-    <name>PM Lib, v2</name>
+    <description>The library for the Laboratory Information Management System web application.</description>
+    <name>LIMS Lib, v1</name>
     
     <build>
         <plugins>

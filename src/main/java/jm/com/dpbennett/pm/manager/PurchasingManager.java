@@ -127,7 +127,7 @@ public class PurchasingManager implements Serializable, AuthenticationListener {
     
     public String getApplicationHeader() {
 
-        return "Procure"; // tk make system option
+        return "LabManager"; // tk make system option
 
     }
     
